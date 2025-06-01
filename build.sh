@@ -1,6 +1,6 @@
+set -e 
+rm -rf build
+mkdir build
 cd build
-rm -rf *
 cmake ..
 cmake --build .
-cd 1_reduce
-./baseline
