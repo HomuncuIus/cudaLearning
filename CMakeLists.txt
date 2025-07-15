@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.28.0)
 project(cuda_learning VERSION 0.1.0 LANGUAGES CUDA CXX C)
-
+set(CMAKE_CUDA_ARCHITECTURES "120") # 指定CUDA代码编译时针对的GPU计算能力(Compute Capability)，120代表NVIDIA Hopper架构(Compute Capability 12.0)
 add_subdirectory(0_device)
 add_subdirectory(1_grid_block_and_thread)
 add_subdirectory(2_vector_add)
-add_subdirectory(3_matmul)
+add_subdirectory(3_reduce)
