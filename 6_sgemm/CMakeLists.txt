@@ -1,0 +1,6 @@
+# find_package(CUDAToolkit)
+# set(CMAKE_BUILD_TYPE Debug)
+add_executable(sgemm sgemm.cu)
+# add_executable(test test.cpp)
+target_link_libraries(sgemm PRIVATE util)
+# target_compile_options(sgemm PRIVATE -lineinfo)
